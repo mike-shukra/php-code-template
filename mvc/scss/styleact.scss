@@ -1,0 +1,84 @@
+div.slides-row {
+    overflow: hidden;
+}
+
+div.deactivate {
+    display: none;
+    z-index: -1000;
+}
+
+div.activate {
+    display: flex;
+    z-index: 1000;
+}
+
+.asanacont {
+    background-color: white;
+    /*width:calc(100% - 30px);*/
+    /*position:absolute;*/
+}
+
+.sana-img-cont {
+    overflow: hidden;
+}
+
+div.slides {
+    /*min-height:280px;*/
+    /*min-width:280px;*/
+    /*overflow: hidden;*/
+}
+
+img.asana-img {
+    width: 100%;
+    min-width: 250px;
+    max-height: 427px;
+    height: auto;
+}
+
+.slides-two {
+    min-height: 480px;
+}
+
+#user-progress {
+    width: 100%;
+}
+
+
+/* анимация */
+
+.mover {
+    width: 1%;
+    /*height: 5px;*/
+    background: #007bff;
+    transform-origin: top left;
+}
+
+@keyframes move {
+    100% {
+        transform: scaleX(100);
+    }
+}
+
+.area {
+    width: 100%;
+    /*height: 5px;*/
+    /*********/
+    /* margin: 0 auto; */
+    /* border: 1px solid #007bff; */
+    background-color: #545b62;
+    overflow: hidden;
+}
+
+#main-area {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+div.sliders-box {
+    overflow: hidden;
+    height: 440px;
+    /* min-height: 680px; */
+}

@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
+<FilesMatch ".(htpasswd|ini|phps|fla|psd|log|sh|json)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
